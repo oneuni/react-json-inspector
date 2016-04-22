@@ -132,14 +132,6 @@ module.exports = React.createClass({
             });
         }
     },
-    shouldComponentUpdate: function (p, s) {
-        return (
-            p.query !== this.props.query ||
-            s.query !== this.state.query ||
-            p.data !== this.props.data ||
-            p.onClick !== this.props.onClick
-        );
-    },
     createFilterer: function(data, options) {
         this.setState({
             filterer: filterer(data, options)
