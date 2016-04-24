@@ -92,7 +92,8 @@ module.exports = React.createClass({
                         label: 'root',
                         root: true,
                         isExpanded: p.isExpanded,
-                        interactiveLabel: p.interactiveLabel
+                        interactiveLabel: p.interactiveLabel,
+                        targetNode: p.targetNode
                     })
             )
         );
